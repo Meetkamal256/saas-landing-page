@@ -22,7 +22,6 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
   max-width: 100%;
 }
 input,
@@ -59,32 +58,10 @@ a {
 }
 
 .container {
-  padding: 40px 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-@media screen and (min-width: 600px) {
-  .container {
-    padding: 60px 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 80px 40px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 80px 60px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .container {
-    padding: 120px 80px;
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   html {
