@@ -1,3 +1,5 @@
+import { LuArrowRight } from "react-icons/lu";
+
 export const Hero = () => {
   return (
     <section>
@@ -14,8 +16,11 @@ export const Hero = () => {
             your progress, motivate your efforts, and celebrate your successes.
           </p>
           <div className="flex gap-1 items-center mt-[30px]">
-            <button>Get for free</button>
-            <button>Learn more</button>
+            <button className="btn btn-primary">Get for free</button>
+            <button className="btn btn-text">
+              <span>Learn more</span>
+              <LuArrowRight className="h-5 w-5 ml-1" />
+            </button>
           </div>
         </div>
       </div>
