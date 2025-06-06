@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-4 bg-black text-white">
         <div className="flex gap-3 items-center justify-center">
           <p className="text-white/60 text-sm hidden md:flex">
@@ -16,7 +16,7 @@ export const Header = () => {
           className="h-4 w-4 ml-2 inline-flex justify-center items-center"
         />
       </div>
-      
+
       <div className="container py-5">
         <div className="flex justify-between items-center">
           <Image src="/assets/logosaas.png" alt="" height={40} width={40} />
