@@ -8,22 +8,16 @@
 }
 
 body {
-  background: #fff;
   font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background: #eaeefe;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  max-width: 100%;
-}
+
 input,
 button,
 textarea,
