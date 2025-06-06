@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="sticky top-0">
       <div className="flex justify-center items-center py-4 bg-black text-white">
         <div className="flex gap-3 items-center justify-center">
-          <p className="text-white/60 text-sm">
+          <p className="text-white/60 text-sm hidden md:flex">
             Streamline Your workflow and boost your productivity
           </p>
           <p>Get started for free</p>
@@ -16,7 +16,7 @@ export const Header = () => {
           className="h-4 w-4 ml-2 inline-flex justify-center items-center"
         />
       </div>
-
+      
       <div className="container py-5">
         <div className="flex justify-between items-center">
           <Image src="/assets/logosaas.png" alt="" height={40} width={40} />
