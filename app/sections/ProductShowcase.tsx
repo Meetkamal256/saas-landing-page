@@ -16,7 +16,7 @@ export const ProductShowcase = () => {
             your progress and motivate your efforts.
           </p>
         </div>
-
+        
         <div className="relative w-full aspect-[16/9] mt-5">
           <Image
             src="/assets/product-image.png"
