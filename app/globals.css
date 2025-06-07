@@ -17,7 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 input,
 button,
 textarea,
@@ -65,6 +64,10 @@ a {
   }
   .btn-text {
     @apply text-black bg-transparent;
+  }
+
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 py-1 px-3 rounded-lg tracking-tight;
   }
 }
 

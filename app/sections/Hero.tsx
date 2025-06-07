@@ -7,7 +7,7 @@ export const Hero = () => {
       <div className="container">
         <div className="md:flex items-center">
           <div className="md:w-[478px] lg:w-1/2">
-            <div className="text-sm inline-flex border border-[#222]/10 py-1 px-3 rounded-lg tracking-tight">
+            <div className="tag">
               Version 2.0 is here
             </div>
             <h1 className="font-bold text-5xl md:text-7xl bg-gradient-to-b from-black to-[#001E7F] text-transparent bg-clip-text mt-6">
