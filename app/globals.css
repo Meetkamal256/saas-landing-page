@@ -83,7 +83,7 @@ a {
   }
 
   .card {
-    @apply p-10 border border-[#f1f1f1] rounded-3xl max-w-sm w-full;
+    @apply p-10 border border-[#f1f1f1] rounded-3xl max-w-sm;
   }
 }
 

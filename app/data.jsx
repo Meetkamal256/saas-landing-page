@@ -85,7 +85,7 @@ export const testimonials = [
   {
     id: 5,
     text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
-    imageSrc: "./assets/avatar-5.png",
+    imageSrc: "/assets/avatar-5.png",
     name: "Taylor Kim",
     username: "@taylorkimm",
   },
@@ -99,7 +99,7 @@ export const testimonials = [
   {
     id: 7,
     text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
-    imageSrc: "./assets/avatar-7.png",
+    imageSrc: "/assets/avatar-7.png",
     name: "Jordan Patels",
     username: "@jpatelsdesign",
   },
