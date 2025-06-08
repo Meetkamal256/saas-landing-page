@@ -1,5 +1,6 @@
 export const pricingTiers = [
   {
+    id: 1,
     title: "Free",
     monthlyPrice: 0,
     buttonText: "Get started for free",
@@ -14,6 +15,7 @@ export const pricingTiers = [
     ],
   },
   {
+    id: 2,
     title: "Pro",
     monthlyPrice: 9,
     buttonText: "Sign up now",
@@ -30,13 +32,14 @@ export const pricingTiers = [
     ],
   },
   {
+    id: 3,
     title: "Business",
     monthlyPrice: 19,
     buttonText: "Sign up now",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
+      "Up Ito 5 project members",
       "Unlimited tasks and projects",
       "200GB storage",
       "Integrations",
