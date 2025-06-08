@@ -9,7 +9,7 @@ export const Testimonials = () => {
   const thirdColumn = testimonials.slice(6, 9);
   
   return (
-    <section className="bg-white">
+    <section className="bg-white flex justify-center">
       <div className="container">
         <div className="flex justify-center">
           <div className="tag">Testimonials</div>
