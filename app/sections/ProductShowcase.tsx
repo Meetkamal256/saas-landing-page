@@ -1,8 +1,23 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 export const ProductShowcase = () => {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
   return (
-    <section className="pt-8 pb-20 md:pt-5 md:pb-10 bg-gradient-to-b from-[#ffff] to-[#D2DCFF] overflow-x-clip">
+    <section
+      ref={sectionRef}
+      className="pt-8 pb-20 md:pt-5 md:pb-10 bg-gradient-to-b from-[#ffff] to-[#D2DCFF] overflow-x-clip"
+    >
       <div className="container">
         <div className="flex justify-center">
           <div className="tag">Boost your productivity</div>
@@ -16,7 +31,7 @@ export const ProductShowcase = () => {
             your progress and motivate your efforts.
           </p>
         </div>
-        
+
         <div className="relative w-full aspect-[16/9] mt-5">
           <Image
             src="/assets/product-image.png"
@@ -25,19 +40,25 @@ export const ProductShowcase = () => {
             className="object-cover"
             priority
           />
-          <Image
+          <motion.img
             src="/assets/pyramid.png"
             alt="pyramid image"
             width={200}
             height={200}
             className="hidden md:flex absolute -right-20 -top-32"
+            style={{
+              translateY: translateY,
+            }}
           />
-          <Image
+          <motion.img
             src="/assets/tube.png"
             alt="tube image"
             width={200}
             height={200}
             className="hidden md:block absolute bottom-15 -left-28"
+            style={{
+              translateY: translateY,
+            }}
           />
         </div>
       </div>
