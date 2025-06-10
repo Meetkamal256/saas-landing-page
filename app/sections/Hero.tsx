@@ -16,6 +16,7 @@ export const Hero = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
     <section
+      id="about"
       ref={heroRef}
       className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_50%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip"
     >
@@ -39,7 +40,7 @@ export const Hero = () => {
               </button>
             </div>
           </div>
-          
+
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
             <MotionImage
               src="/assets/cog.png"

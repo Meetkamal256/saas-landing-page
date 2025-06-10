@@ -16,7 +16,7 @@ export const CallToAction = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   
   return (
-    <section ref={sectionRef} className="bg-white py-24 overflow-x-clip">
+    <section ref={sectionRef} className="bg-white py-24 overflow-x-clip mt-20" id="help">
       <div className="container">
         <div className="section-heading relative">
           <h2 className="section-title">Sign up for today</h2>

@@ -9,7 +9,7 @@ export const Testimonials = () => {
   const firstColumn = testimonials.slice(0, 3);
   const secondColumn = testimonials.slice(3, 6);
   const thirdColumn = testimonials.slice(6, 9);
-  
+
   const scrollAnimation = {
     animate: {
       y: ["0%", "-50%"],
@@ -20,20 +20,23 @@ export const Testimonials = () => {
       repeat: Infinity,
     },
   };
-  
+
   // Hover states
   const [hoveredCol, setHoveredCol] = useState<null | number>(null);
-  
+
   const getAnimationProps = (colIndex: number) =>
     hoveredCol === colIndex ? {} : scrollAnimation;
-  
+
   return (
-    <section className="bg-white flex justify-center">
+    <section
+      className="bg-white flex justify-center scroll-mt-20"
+      id="customers"
+    >
       <div className="container overflow-hidden">
         <div className="flex justify-center">
           <div className="tag">Testimonials</div>
         </div>
-        
+
         <div className="section-heading">
           <h2 className="section-title mt-5">What our users say</h2>
           <p className="section-description mt-5">
@@ -41,7 +44,7 @@ export const Testimonials = () => {
             essential tool for users around the world.
           </p>
         </div>
-        
+
         {/* Testimonial Columns */}
         <div className="flex justify-center gap-6 mt-10">
           {/* First column */}
@@ -55,7 +58,7 @@ export const Testimonials = () => {
               <TestimonialsColumn testimonials={firstColumn} />
             </motion.div>
           </div>
-          
+
           {/* Second column */}
           <div
             className="hidden md:block h-[500px] overflow-hidden"
@@ -67,7 +70,7 @@ export const Testimonials = () => {
               <TestimonialsColumn testimonials={secondColumn} />
             </motion.div>
           </div>
-          
+
           {/* Third column */}
           <div
             className="hidden lg:block h-[500px] overflow-hidden"

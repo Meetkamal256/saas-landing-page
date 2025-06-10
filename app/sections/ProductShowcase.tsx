@@ -17,7 +17,8 @@ export const ProductShowcase = () => {
   return (
     <section
       ref={sectionRef}
-      className="pt-8 pb-20 md:pt-5 md:pb-10 bg-gradient-to-b from-[#ffff] to-[#D2DCFF] overflow-x-clip"
+      className="pt-8 pb-20 md:pt-5 md:pb-10 bg-gradient-to-b from-[#ffff] to-[#D2DCFF] overflow-x-clip scroll-mt-20"
+      id="updates"
     >
       <div className="container">
         <div className="flex justify-center">

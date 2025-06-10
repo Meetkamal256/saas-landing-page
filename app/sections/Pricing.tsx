@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white scroll-mt-20" id="features">
       <div className="container">
         <div className="section-heading">
           <h2 className="text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
