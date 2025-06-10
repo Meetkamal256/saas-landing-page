@@ -1,8 +1,20 @@
+"use client";
+
+import { useRef } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 export const CallToAction = () => {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
   return (
-    <section className="bg-white py-24 overflow-x-clip">
+    <section ref={sectionRef} className="bg-white py-24 overflow-x-clip">
       <div className="container">
         <div className="section-heading relative">
           <h2 className="section-title">Sign up for today</h2>
@@ -10,19 +22,25 @@ export const CallToAction = () => {
             Celebrate the joy of accomplishment with an app designed to track
             your progress and motivate your efforts.
           </p>
-          <Image
+          <motion.img
             src="/assets/star.png"
             alt="star image"
             width={360}
             height={360}
             className="hidden md:block absolute -left-[350px] -top-[137px]"
+            style={{
+              translateY,
+            }}
           />
-          <Image
+          <motion.img
             src="/assets/spring.png"
             alt="spring image"
             width={360}
             height={360}
             className="hidden md:block absolute -right-[331px] -top-[19px]"
+            style={{
+              translateY,
+            }}
           />
         </div>
 
