@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { testimonials } from "../data";
 import { TestimonialsColumn } from "../components/TestimonialsColumn";
 import { motion } from "framer-motion";

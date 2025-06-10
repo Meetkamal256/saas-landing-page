@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
+const MotionImage = motion.create(Image);
 export const ProductShowcase = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -40,7 +41,7 @@ export const ProductShowcase = () => {
             className="object-cover"
             priority
           />
-          <motion.img
+          <MotionImage
             src="/assets/pyramid.png"
             alt="pyramid image"
             width={200}
@@ -50,7 +51,7 @@ export const ProductShowcase = () => {
               translateY: translateY,
             }}
           />
-          <motion.img
+          <MotionImage
             src="/assets/tube.png"
             alt="tube image"
             width={200}

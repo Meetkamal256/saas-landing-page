@@ -5,6 +5,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+const MotionImage = motion.create(Image);
+
 export const CallToAction = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -12,7 +14,7 @@ export const CallToAction = () => {
     offset: ["start end", "end start"],
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
-
+  
   return (
     <section ref={sectionRef} className="bg-white py-24 overflow-x-clip">
       <div className="container">
@@ -22,7 +24,7 @@ export const CallToAction = () => {
             Celebrate the joy of accomplishment with an app designed to track
             your progress and motivate your efforts.
           </p>
-          <motion.img
+          <MotionImage
             src="/assets/star.png"
             alt="star image"
             width={360}
@@ -32,7 +34,7 @@ export const CallToAction = () => {
               translateY,
             }}
           />
-          <motion.img
+          <MotionImage
             src="/assets/spring.png"
             alt="spring image"
             width={360}
@@ -43,7 +45,7 @@ export const CallToAction = () => {
             }}
           />
         </div>
-
+        
         <div className="flex justify-center gap-4 mt-5">
           <button className="btn btn-primary">Get for free</button>
           <button className="btn btn-text">

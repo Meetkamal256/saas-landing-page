@@ -1,17 +1,18 @@
 "use client";
 
-import { LuArrowRight } from "react-icons/lu";
 import Image from "next/image";
+import { LuArrowRight } from "react-icons/lu";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
+const MotionImage = motion.create(Image);
 export const Hero = () => {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
     offset: ["start end", "end start"],
   });
-
+  
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
     <section
@@ -38,9 +39,9 @@ export const Hero = () => {
               </button>
             </div>
           </div>
-
+          
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
-            <motion.img
+            <MotionImage
               src="/assets/cog.png"
               width={648}
               height={648}
@@ -56,7 +57,7 @@ export const Hero = () => {
                 ease: "easeInOut",
               }}
             />
-            <motion.img
+            <MotionImage
               src="/assets/cylinder.png"
               width={220}
               height={220}
@@ -66,7 +67,7 @@ export const Hero = () => {
                 translateY: translateY,
               }}
             />
-            <motion.img
+            <MotionImage
               src="/assets/noodle.png"
               width={220}
               height={220}
