@@ -8,35 +8,15 @@
 }
 
 body {
-  background: #fff;
   font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background: #eaeefe;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
 input,
 button,
 textarea,
@@ -70,36 +50,61 @@ a {
   text-decoration: none;
 }
 
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container {
-  padding: 40px 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-@media screen and (min-width: 600px) {
-  .container {
-    padding: 60px 20px;
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
   }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    padding: 80px 40px;
+  .btn-primary {
+    @apply bg-black text-white;
   }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    padding: 80px 60px;
+  .btn-text {
+    @apply text-black bg-transparent;
   }
-}
 
-@media screen and (min-width: 1920px) {
-  .container {
-    padding: 120px 80px;
+  .tag {
+    @apply text-sm inline-flex border border-[#222]/10 py-1 px-3 rounded-lg tracking-tight;
+  }
+
+  .section-title {
+    @apply text-center text-3xl md:text-[54px] md:leading-[60px] font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
+  }
+
+  .section-heading {
+    @apply max-w-[574px] mx-auto;
+  }
+
+  .card {
+    @apply p-10 border border-[#f1f1f1] rounded-3xl max-w-sm w-full;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
