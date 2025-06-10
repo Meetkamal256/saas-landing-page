@@ -2,9 +2,17 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { testimonials } from "../data";
 
-export const TestimonialsColumn = (props: { className?: string; testimonials: typeof testimonials }) => {
+export const TestimonialsColumn = (props: {
+  className?: string;
+  testimonials: typeof testimonials;
+}) => {
   return (
-    <div className={twMerge("flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]", props.className)}>
+    <div
+      className={twMerge(
+        "flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] cursor-pointer",
+        props.className
+      )}
+    >
       {props.testimonials.map((testimonial) => (
         <div key={testimonial.id} className="card shadow[0_7px_14px_#EAEAEA]">
           <div>{testimonial.text}</div>
