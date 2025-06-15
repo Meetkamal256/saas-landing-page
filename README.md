@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 SaaS Landing Page
 
-## Getting Started
+## 📸 Project Preview
+![Image](https://github.com/user-attachments/assets/dfe62b44-bb4a-4335-8112-68d0c39ab7a8)
 
-First, run the development server:
+A modern, responsive SaaS landing page built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed for high performance, smooth animations, and a clean, conversion-friendly layout.
+
+---
+
+## 🌐 Live Demo
+
+👉 [View Live Demo](https://saas-landing-page-nine-tawny.vercel.app/)  
+
+---
+
+## ✨ Features
+
+- ✅ **Hero Section** with compelling call-to-action  
+- ✅ **Product Features** with icons and descriptions  
+- ✅ **Animated Scroll Transitions** using Framer Motion  
+- ✅ **Pricing Section** with flexible plans  
+- ✅ **Customer Testimonials** with avatars and quotes  
+- ✅ **FAQ Section** with collapsible answers  
+- ✅ **Contact & Footer** with links and branding  
+- ✅ **Mobile-Responsive** layout  
+
+---
+
+## 🛠 Tech Stack
+
+| Tech          | Description                                     |
+|---------------|-------------------------------------------------|
+| Next.js       | React Framework for SSR & fast routing          |
+| TypeScript    | Static typing for reliable code                 |
+| Tailwind CSS  | Utility-first CSS framework                     |
+| Framer Motion | Library for modern animations in React          |
+| Vercel        | Deployment platform for frontend apps           |
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally on your machine:
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/Meetkamal256/saas-landing-page.git
+```
+### 2. Navigate to project
+
+```bash
+cd  saas-landing-page
+```
+### 3. start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+```bash
+git clone https://github.com/Meetkamal256/tedxkashere.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
