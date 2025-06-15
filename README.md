@@ -23,7 +23,6 @@ A modern, responsive SaaS landing page built with **Next.js**, **TypeScript**, *
 - ✅ **FAQ Section** with collapsible answers  
 - ✅ **Contact & Footer** with links and branding  
 - ✅ **Mobile-Responsive** layout  
-- ✅ **Dark Mode Ready** *(if implemented)*
 
 ---
 
